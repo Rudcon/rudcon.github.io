@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NordLink | RUDCON AS</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      .project-hero {
+        background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+        color: white;
+        padding: 4rem 0;
+        margin-bottom: 3rem;
+      }
+      .project-hero h1 {
+        color: white;
+        margin: 0;
+      }
+      .project-meta-full {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+        margin: 2rem 0;
+        padding: 2rem;
+        background: var(--surface);
+        border-radius: 8px;
+      }
+      .meta-item h4 {
+        margin: 0 0 0.5rem 0;
+        color: var(--muted);
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+      .meta-item p {
+        margin: 0;
+        font-weight: 500;
+        color: var(--text);
+      }
+      .image-placeholder {
+        background: var(--surface-soft);
+        border: 2px dashed var(--border);
+        border-radius: 8px;
+        padding: 3rem;
+        text-align: center;
+        color: var(--muted);
+        margin: 2rem 0;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .project-content {
+        max-width: 800px;
+      }
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--primary);
+        text-decoration: none;
+        margin-bottom: 2rem;
+        font-weight: 500;
+      }
+      .back-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../index.html"><img src="../assets/images/Logo RUDCON.PDF ny/RUDCON AS.png" alt="RUDCON AS" /></a>
+        <nav class="site-nav" id="siteNav">
+          <a href="../index.html#home">Hjem</a>
+          <a href="../index.html#about">Om oss</a>
+          <a href="../index.html#projects">Prosjekter</a>
+          <a href="../index.html#expertise">Kompetanse</a>
+          <a href="../index.html#contact">Kontakt</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Åpne meny">Meny</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="project-hero">
+        <div class="container">
+          <a href="../index.html#projects" class="back-link">← Tilbake til prosjekter</a>
+          <h1>NordLink</h1>
+          <p>HVDC-forbindelse mellom Norge og Tyskland</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container project-content">
+          <div class="project-meta-full">
+            <div class="meta-item">
+              <h4>Teknologi</h4>
+              <p>525 kV DC (HVDC)</p>
+            </div>
+            <div class="meta-item">
+              <h4>Kapasitet</h4>
+              <p>1400 MW</p>
+            </div>
+            <div class="meta-item">
+              <h4>Ledningslengde</h4>
+              <p>Ca. 550 km</p>
+            </div>
+          </div>
+
+          <h2>Om prosjektet</h2>
+          <p>NordLink er en stor og ambisiøs HVDC-forbindelse (High Voltage Direct Current) mellom Norge og Tyskland. I byggefasen omfatter prosjektet omfattende oppfølging av alle aspekter fra design til installasjon.</p>
+          
+          <h3>Prosjektdata</h3>
+          <ul>
+            <li>Teknologi: 525 kV DC (HVDC)</li>
+            <li>Kapasitet: 1400 MW</li>
+            <li>Ledningslengde: Ca. 550 km</li>
+            <li>Forbindelse: Norge – Tyskland</li>
+          </ul>
+
+          <h3>RUDCON sin rolle i byggefasen</h3>
+          <ul>
+            <li>Oppfølging av kabelarbeider</li>
+            <li>Stasjonrelaterte arbeider</li>
+            <li>Grunnarbeider og konstruksjon</li>
+            <li>Elektroarbeider og installasjon</li>
+            <li>Produksjonskontroll</li>
+            <li>Installasjonsstøtte på installasjonsfartøy</li>
+          </ul>
+
+          <h3>Bilde</h3>
+          <img src="../assets/images/Prosjektbilder/Nordlink.png" alt="NordLink HVDC-forbindelse" style="width: 100%; max-width: 600px; height: auto; border-radius: 8px; margin: 2rem 0;" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 Rudcon AS. Elkraft for trygg og effektiv drift.</p>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
