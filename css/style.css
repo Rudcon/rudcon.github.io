@@ -91,6 +91,24 @@ textarea {
   color: var(--primary);
 }
 
+.site-nav .nav-featured {
+  padding: 0.7rem 1.15rem;
+  border: 2px solid #d4a72c;
+  border-radius: 999px;
+  background: #fff5cf;
+  color: #6b4d00;
+  font-weight: 700;
+  box-shadow: 0 3px 0 #d4a72c;
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.site-nav .nav-featured:hover {
+  background: #ffeaa3;
+  color: #4f3900;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 0 #d4a72c;
+}
+
 .menu-toggle {
   display: none;
   border: none;
@@ -345,6 +363,18 @@ p {
 }
 
 @media (max-width: 700px) {
+  .hero {
+    min-height: 70svh;
+    padding: 5rem 0 4rem;
+    background-position: center center;
+    background-attachment: scroll;
+  }
+
+  .hero-logo {
+    max-width: min(100%, 360px);
+    margin-bottom: 2rem;
+  }
+
   .site-nav {
     position: fixed;
     inset: 72px 0 auto;
@@ -359,6 +389,11 @@ p {
 
   .site-nav.open {
     display: flex;
+  }
+
+  .site-nav .nav-featured {
+    text-align: center;
+    margin-top: 0.35rem;
   }
 
   .menu-toggle {
