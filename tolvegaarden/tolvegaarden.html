@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tolvegården kontorfellesskap i Flekkefjord - moderne kontorer med utsikt mot elva og byfjorden." />
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/rudcon-favicon.svg" />
+  <link rel="apple-touch-icon" href="../assets/icons/rudcon-favicon.svg" />
+  <meta property="og:image" content="https://rudcon.no/assets/icons/rudcon-favicon.svg" />
+  <title>Tolvegården Kontorfellesskap</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="home-link" href="../index.html#home">← Til RUDCON AS</a>
+      <h1>Tolvegården Kontorfellesskap</h1>
+      <p>Tolvegården er et moderne kontorfellesskap - tilpasset fremtidens måter å jobbe på</p>
+      
+      <nav class="main-nav">
+        <button class="nav-button active" data-page="info">Om Arealene</button>
+        <button class="nav-button" data-page="offices">Ledige Kontorer</button>
+        <button class="nav-button" data-page="contact">Kontakt</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- INFO PAGE -->
+    <section id="info" class="page active">
+      <h2>Om Arealene</h2>
+      <p>Majoriteten av våre kontorer er 10 kvm og har en fantastisk utsikt mot elva, Spira Kulturhus og byfjorden. Alle kontorer inkluderer hev/senk pult og kontorstol, hvor også internett, strøm og rengjøring er inkludert i prisen. Lune arealer med god akustikk for å gi det beste forutsetninger for et godt arbeidsmiljø. Trivelige folk.</p>
+      
+      <div id="infoImages" class="image-gallery">
+        <img src="images/Picture2.jpg" alt="Tolvegården, arealene bilde 2" loading="lazy" />
+        <img src="images/Picture3.jpg" alt="Tolvegården, arealene bilde 3" loading="lazy" />
+        <img src="images/Picture4.jpg" alt="Tolvegården, arealene bilde 4" loading="lazy" />
+        <img src="images/Picture5.jpg" alt="Tolvegården, arealene bilde 5" loading="lazy" />
+        <img src="images/Picture6.jpg" alt="Tolvegården, arealene bilde 6" loading="lazy" />
+        <img src="images/Picture7.jpg" alt="Tolvegården, arealene bilde 7" loading="lazy" />
+        <img src="images/Picture8.jpg" alt="Tolvegården, arealene bilde 8" loading="lazy" />
+        <img src="images/Picture9.jpg" alt="Tolvegården, arealene bilde 9" loading="lazy" />
+      </div>
+      
+      <div id="infoText" class="info-section">
+        <p>
+          Tolvegården er et trivelig kontorfellesskap sentralt i Flekkefjord, for deg som ønsker et eget kontor i et sosialt og profesjonelt arbeidsmiljø. Kontorene er møblert med hev/senk-pult og kontorstol, og internett, strøm og rengjøring er inkludert. Her kan du jobbe uforstyrret, samtidig som du får mulighet til å bli kjent med andre som holder til i huset – med utsikt mot elva, Spira Kulturhus og byfjorden.
+        </p>
+      </div>
+
+      <div class="info-bottom-grid">
+        <div class="floorplan-card">
+          <h3>Plantegning</h3>
+          <img class="floorplan-image" src="images/Plantegning Tolvegården.png" alt="Plantegning av Tolvegården" />
+        </div>
+        <div class="map-card">
+          <h3>Lokasjon</h3>
+          <div id="map">
+            <iframe
+              src="https://www.google.com/maps?q=Strandaten%2038,%204400%20Flekkefjord&output=embed"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFICES PAGE -->
+    <section id="offices" class="page">
+      <h2>Ledige Kontorer</h2>
+      <p>Oversikt over alle kontorer ved Tolvegården</p>
+      
+      <div id="officesList" class="offices-grid">
+        <!-- Kontorer blir fylt inn av JavaScript -->
+      </div>
+      
+      <!-- Office Detail Modal -->
+      <div id="officeModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3 id="officeTitle"></h3>
+          <div class="modal-body">
+            <div id="officeDetailImage" class="office-image-placeholder">Bilde av kontoret</div>
+            <div id="officeDetails"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT PAGE -->
+    <section id="contact" class="page">
+      <h2>Kontakt</h2>
+      
+      <div class="contact-info">
+        <div class="contact-persons">
+          <p><strong>Adresse:</strong> Strandaten 38, 4400 Flekkefjord</p>
+          <div class="persons-grid">
+            <div class="person-card">
+              <img class="person-image" src="images/Frode.jpeg" alt="Frode Rudolfsen" />
+              <div class="person-info">
+                <p id="person1Name">Navn: Frode Rudolfsen</p>
+                <p id="person1Title">Utleier</p>
+                <p id="person1Phone">Tlf: 482 70 233</p>
+                <p id="person1Email">E-post: Frode.rudolfsen@rudcon.no</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Tolvegården kontorfellesskap. Alle rettigheter reservert.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
