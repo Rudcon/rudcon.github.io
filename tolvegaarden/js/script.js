@@ -44,7 +44,7 @@ const offices = [
 function getOfficeImage(office) {
   const imageName = office.name.startsWith('Kontor M')
     ? `${office.name.slice(-2)}.jpg`
-    : `K${office.id}.jpg`;
+    : office.id === 1 ? 'K1.JPEG' : `K${office.id}.jpg`;
   return `images/${imageName}`;
 }
 
