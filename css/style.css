@@ -165,6 +165,10 @@ h3 {
   color: var(--text);
 }
 
+.project-hero p {
+  color: #ffffff;
+}
+
 h1 {
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   line-height: 1.1;
